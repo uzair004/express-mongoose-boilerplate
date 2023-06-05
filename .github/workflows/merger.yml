@@ -1,0 +1,28 @@
+name: Merge PR to Testing Branch
+
+permissions:
+  contents: write
+  pull-requests: write
+
+on:
+  pull_request:
+    branches:
+      - master
+      - main
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+jobs:
+  merge-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checks out code
+        uses: actions/checkout@v3
+
+      - name: Merge PR to Testing Branch
+        uses: solenova-tech/gamma@v1.3.1
+        with:
+          target-branch: 'staging'
