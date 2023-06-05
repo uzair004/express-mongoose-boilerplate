@@ -22,7 +22,7 @@
     "prepare": "husky install"
   },
   "keywords": [
-   "lovie aurora"
+    "lovie aurora"
   ],
   "dependencies": {
     "bcryptjs": "^2.4.3",
