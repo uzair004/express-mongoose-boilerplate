@@ -1,0 +1,31 @@
+name: Validate Code Practice
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+    branches:
+      - '*'
+    types:
+      - opened
+      - reopened
+      - synchronize
+
+jobs:
+  code-validator:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checks out code
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Prettier
+        run: npm run prettier
+
+      - name: Run lint
+        run: npm run lint
