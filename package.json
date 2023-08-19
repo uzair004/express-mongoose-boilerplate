@@ -1,7 +1,7 @@
 {
-  "name": "lovie-aurora",
+  "name": "sample-project",
   "version": "1.0",
-  "description": "Lovier aurora server code",
+  "description": "sample project server code",
   "bin": "bin/createNodejsApp.js",
   "main": "src/index.js",
   "author": "Muhammad Uzair",
@@ -22,7 +22,7 @@
     "prepare": "husky install"
   },
   "keywords": [
-    "lovie aurora"
+    "Sample Project"
   ],
   "dependencies": {
     "bcryptjs": "^2.4.3",
