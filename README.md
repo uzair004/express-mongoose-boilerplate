@@ -1,1 +1,0 @@
-# Lovie Aurora Backend API
