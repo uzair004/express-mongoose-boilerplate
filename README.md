@@ -18,18 +18,18 @@ cp .env.example .env
 ```
 
 ## Table of Contents
-- Features
-- Commands
-- Environment Variables
-- Project Structure
-- API Documentation
-- Error Handling
-- Validation
-- Authentication
-- Authorization
-- Logging
-- Custom Mongoose Plugins
-- Linting
+- [Features](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#features)
+- [Commands](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#commands)
+- [Environment Variables](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#environment-variables)
+- [Project Structure](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#project-structure)
+- [API Documentation](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#api-documentation)
+- [Error Handling](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#error-handling)
+- [Validation](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#validation)
+- [Authentication](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#authentication)
+- [Authorization](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#authorization)
+- [Logging](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#logging)
+- [Custom Mongoose Plugins](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#custom-mongoose-plugins)
+- [Linting](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#linting)
 - Contributing
 
   ## Features
@@ -132,7 +132,7 @@ SMTP_PASSWORD=email-server-password
 EMAIL_FROM=support@yourapp.com
 ```
 
-Project Structure
+## Project Structure
 ```md
 src\
  |--config\         # Environment variables and configuration related things
