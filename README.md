@@ -33,16 +33,16 @@ cp .env.example .env
 - Contributing
 
   ## Features
-- NoSQL database: MongoDB object data modeling using Mongoose
-- Authentication and authorization: using passport
-- Validation: request data validation using Joi
-- Logging: using winston and morgan
-- Testing: unit and integration tests using Jest
+- NoSQL database: [MongoDB](mongodb.com) object data modeling using [Mongoose](mongoosejs.com)
+- Authentication and authorization: using [passport](www.passportjs.org)
+- Validation: request data validation using [Joi](https://github.com/hapijs/joi)
+- Logging: using [winston](https://github.com/winstonjs/winston) and [morgan](https://github.com/expressjs/morgan)
+- Testing: unit and integration tests using [Jest](https://jestjs.io/)
 - Error handling: centralized error handling mechanism
-- API documentation: with swagger-jsdoc and swagger-ui-express
-- Process management: advanced production process management using PM2
-- Dependency management: with Yarn
-- Environment variables: using dotenv and cross-env
+- API documentation: with [swagger-jsdoc](https://github.com/Surnet/swagger-jsdoc) and [swagger-ui-express](https://github.com/scottie1984/swagger-ui-express)
+- Process management: advanced production process management using [PM2](https://pm2.keymetrics.io/)
+- Dependency management: with [Yarn](https://yarnpkg.com/)
+- Environment variables: using [dotenv](https://github.com/motdotla/dotenv) and [corss-env](https://github.com/kentcdodds/cross-env#readme)
 - Security: set security HTTP headers using helmet
 - Santizing: sanitize request data against xss and query injection
 - CORS: Cross-Origin Resource-Sharing enabled using cors
@@ -174,7 +174,9 @@ List of available routes:
 ## Error Handling
 The app has a centralized error handling mechanism.
 
-Controllers should try to catch the errors and forward them to the error handling middleware (by calling `next(error)`). For convenience, you can also wrap the controller inside the catchAsync utility wrapper, which forwards the error.
+Controllers should try to catch the errors and forward them to the error handling middleware (by calling `next(error)`). 
+
+For convenience, you can also wrap the controller inside the catchAsync utility wrapper, which forwards the error.
 
 ```js
 const catchAsync = require('../utils/catchAsync');
@@ -250,6 +252,7 @@ An access token is valid for 30 minutes. You can modify this expiration time by 
 **Refreshing Access Tokens:**
 
 After the access token expires, a new access token can be generated, by making a call to the refresh token endpoint `(POST /v1/auth/refresh-tokens)` and sending along a valid refresh token in the request body. This call returns a new access token and a new refresh token.
+
 A refresh token is valid for 30 days. You can modify this expiration time by changing the `JWT_REFRESH_EXPIRATION_DAYS` environment variable in the .env file.
 
 ## Authorization
@@ -272,6 +275,7 @@ If the user making the request does not have the required permissions to access 
 
 ## Logging
 Import the logger from `src/config/logger.js`. It is using the Winston logging library.
+
 Logging should be done according to the following severity levels (ascending order from most important to least important):
 
 ```js
@@ -288,7 +292,9 @@ logger.debug('message'); // level 5
 In development mode, log messages of all severity levels will be printed to the console.
 
 In production mode, only `info`, `warn`, and `error` logs will be printed to the console.
+
 It is up to the server (or process manager) to actually read them from the console and store them in log files.
+
 This app uses pm2 in production mode, which is already configured to store the logs in log files.
 
 Note: API request information (request url, response code, timestamp, etc.) are also automatically logged (using morgan).
@@ -312,12 +318,15 @@ userSchema.plugin(paginate);
 const User = mongoose.model('User', userSchema);
 ```
 **toJSON**
+
 The toJSON plugin applies the following changes in the toJSON transform call:
 - removes __v, createdAt, updatedAt, and any schema path that has private: true
 - replaces _id with id
 
 **paginate**
+
 The `paginate` plugin adds the paginate static method to the mongoose schema.
+
 Adding this plugin to the `User` model schema will allow you to do the following:
 
 ```js
@@ -337,6 +346,7 @@ const options = {
 ```
 
 The plugin also supports sorting by multiple criteria (separated by a comma): `sortBy: name:desc,role:asc`
+
 The `paginate` method returns a Promise, which fulfills with an object having the following properties:
 ```js
 {
