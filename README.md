@@ -11,7 +11,7 @@ npm install
 ```
 Set the environment variables:
 
-```
+```bash
 cp .env.example .env
 
 # open .env and modify the environment variables (if needed)
@@ -108,7 +108,7 @@ npm prettier:fix
 
 ## Environment Variables
 The environment variables can be found and modified in the `.env` file. They come with these default values:
-```
+```env
 # Port number
 PORT=3000
 
@@ -133,7 +133,7 @@ EMAIL_FROM=support@yourapp.com
 ```
 
 Project Structure
-```
+```md
 src\
  |--config\         # Environment variables and configuration related things
  |--controllers\    # Route controllers (controller layer)
@@ -351,11 +351,11 @@ Linting is done using ESLint and Prettier.
 
 In this app, ESLint is configured to follow the Airbnb JavaScript style guide with some modifications. It also extends eslint-config-prettier to turn off all rules that are unnecessary or might conflict with Prettier.
 
-To modify the ESLint configuration, update the .eslintrc.json file. To modify the Prettier configuration, update the .prettierrc.json file.
+To modify the ESLint configuration, update the `.eslintrc.json` file. To modify the Prettier configuration, update the `.prettierrc.json` file.
 
-To prevent a certain file or directory from being linted, add it to .eslintignore and .prettierignore.
+To prevent a certain file or directory from being linted, add it to `.eslintignore` and `.prettierignore`.
 
-To maintain a consistent coding style across different IDEs, the project contains .editorconfig
+To maintain a consistent coding style across different IDEs, the project contains `.editorconfig`
 
 
 
