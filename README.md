@@ -7,7 +7,7 @@ cd express-mongoose-boilerplate
 Install the dependencies:
 
 ```
-npm install
+yarn install
 ```
 Set the environment variables:
 
@@ -59,51 +59,51 @@ cp .env.example .env
 
 Running locally:
 ```
-npm run dev
+yarn run dev
 ```
 
 Running in production:
 ```
-npm run start
+yarn run start
 ```
 
 Testing:
 ```
 # run all tests
-npm test
+yarn test
 
 # run all tests in watch mode
-npm test:watch
+yarn test:watch
 
 # run test coverage
-npm coverage
+yarn coverage
 ```
 
 Docker:
 ```
 # run docker container in development mode
-npm docker:dev
+yarn docker:dev
 
 # run docker container in production mode
-npm docker:prod
+yarn docker:prod
 
 # run all tests in a docker container
-npm docker:test
+yarn docker:test
 ```
 
 Linting:
 ```
 # run ESLint
-npm lint
+yarn lint
 
 # fix ESLint errors
-npm lint:fix
+yarn lint:fix
 
 # run prettier
-npm prettier
+yarn prettier
 
 # fix prettier errors
-npm prettier:fix
+yarn prettier:fix
 ```
 
 ## Environment Variables
