@@ -371,31 +371,3 @@ To maintain a consistent coding style across different IDEs, the project contain
 
 ## Contributing
 Contributions are more than welcome! Please check out the [contributing guide](https://github.com/uzair004/express-mongoose-boilerplate/blob/main/CONTRIBUTING.md).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
