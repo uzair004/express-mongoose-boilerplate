@@ -30,7 +30,7 @@ cp .env.example .env
 - [Logging](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#logging)
 - [Custom Mongoose Plugins](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#custom-mongoose-plugins)
 - [Linting](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#linting)
-- Contributing
+- [Contributing](https://github.com/uzair004/express-mongoose-boilerplate?tab=readme-ov-file#contributing)
 
   ## Features
 - NoSQL database: [MongoDB](mongodb.com) object data modeling using [Mongoose](mongoosejs.com)
@@ -368,6 +368,11 @@ To modify the ESLint configuration, update the `.eslintrc.json` file. To modify 
 To prevent a certain file or directory from being linted, add it to `.eslintignore` and `.prettierignore`.
 
 To maintain a consistent coding style across different IDEs, the project contains `.editorconfig`
+
+## Contributing
+Contributions are more than welcome! Please check out the [contributing guide](https://github.com/uzair004/express-mongoose-boilerplate/blob/main/CONTRIBUTING.md).
+
+
 
 
 
